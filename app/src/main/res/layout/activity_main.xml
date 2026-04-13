@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_large"
+        android:gravity="center_horizontal">
+
+        <!-- Título do App -->
+        <TextView
+            android:id="@+id/txtTituloHub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_hub"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            android:textColor="@color/hub_primary"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:id="@+id/txtSubtituloHub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitulo_hub"
+            android:textSize="@dimen/text_subtitle"
+            android:textColor="@color/hub_text_secondary_light"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_large" />
+
+        <!-- Card: Placar de Basquete -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPlacar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:cardCornerRadius="@dimen/hub_card_radius"
+            app:cardElevation="@dimen/hub_card_elevation"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/hub_card_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Ícone do placar -->
+                    <TextView
+                        android:layout_width="@dimen/hub_icon_size"
+                        android:layout_height="@dimen/hub_icon_size"
+                        android:text="🏀"
+                        android:textSize="32sp"
+                        android:gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_medium">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_placar"
+                            android:textSize="@dimen/text_card_title"
+                            android:textStyle="bold"
+                            android:textColor="@color/placar_time_a" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/descricao_placar"
+                            android:textSize="@dimen/text_card_description"
+                            android:textColor="@color/hub_text_secondary_light"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- Seta indicando navegação -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="→"
+                        android:textSize="24sp"
+                        android:textColor="@color/hub_text_secondary_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Card: Calculadora Científica -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCalculadora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:cardCornerRadius="@dimen/hub_card_radius"
+            app:cardElevation="@dimen/hub_card_elevation"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/hub_card_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- Ícone da calculadora -->
+                    <TextView
+                        android:layout_width="@dimen/hub_icon_size"
+                        android:layout_height="@dimen/hub_icon_size"
+                        android:text="🔢"
+                        android:textSize="32sp"
+                        android:gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_medium">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_calculadora"
+                            android:textSize="@dimen/text_card_title"
+                            android:textStyle="bold"
+                            android:textColor="@color/calc_btn_operator" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/descricao_calculadora"
+                            android:textSize="@dimen/text_card_description"
+                            android:textColor="@color/hub_text_secondary_light"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <!-- Seta indicando navegação -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="→"
+                        android:textSize="24sp"
+                        android:textColor="@color/hub_text_secondary_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

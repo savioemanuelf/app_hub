@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_medium"
+    android:paddingBottom="@dimen/padding_xlarge">
+
+    <LinearLayout
+        android:id="@+id/secaoCronometro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/txtPeriodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1º PERÍODO"
+            android:textSize="@dimen/placar_periodo_size"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:id="@+id/txtCronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00"
+            android:textSize="@dimen/placar_cronometro_size"
+            android:textStyle="bold"
+            android:fontFamily="monospace"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnIniciarPausar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/btn_iniciar"
+                android:backgroundTint="@color/placar_botao_iniciar"/>
+
+            <Button
+                android:id="@+id/btnProximoPeriodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/btn_proximo_periodo"
+                android:backgroundTint="@color/placar_botao_periodo"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/padding_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secaoTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secaoCronometro"
+        android:orientation="horizontal">
+
+        <!-- Time A -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:text="Time A"
+                android:textSize="@dimen/placar_team_name_size"
+                android:textColor="@color/placar_time_a"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/placarTimeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textSize="@dimen/placar_score_size"
+                android:fontFamily="sans-serif"
+                android:backgroundTint="@color/placar_time_a"/>
+
+            <Button
+                android:id="@+id/tresPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:text="@string/btn_tres_pontos"
+                android:backgroundTint="@color/placar_time_a"/>
+
+            <Button
+                android:id="@+id/doisPontosA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:text="@string/btn_dois_pontos"
+                android:backgroundTint="@color/placar_time_a"/>
+
+            <Button
+                android:id="@+id/tiroLivreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:text="@string/btn_tiro_livre"
+                android:backgroundTint="@color/placar_time_a"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="@dimen/padding_medium"/>
+
+        <!-- Time B -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/timeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium"
+                android:text="Time B"
+                android:textColor="@color/placar_time_b"
+                android:textSize="@dimen/placar_team_name_size"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/placarTimeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:textSize="@dimen/placar_score_size"
+                android:fontFamily="sans-serif"/>
+
+            <Button
+                android:id="@+id/tresPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:text="@string/btn_tres_pontos"/>
+
+            <Button
+                android:id="@+id/doisPontosB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:text="@string/btn_dois_pontos"/>
+
+            <Button
+                android:id="@+id/tiroLivreB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:text="@string/btn_tiro_livre"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reiniciarPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_reiniciar_partida"
+        android:backgroundTint="@color/placar_botao_reiniciar"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/padding_xlarge"
+        android:textStyle="bold"/>
+</RelativeLayout>

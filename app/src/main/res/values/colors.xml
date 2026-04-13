@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores gerais -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Cores do Hub -->
+    <color name="hub_primary">#FF1565C0</color>
+    <color name="hub_primary_dark">#FF0D47A1</color>
+    <color name="hub_accent">#FF42A5F5</color>
+    <color name="hub_background_light">#FFF5F5F5</color>
+    <color name="hub_background_dark">#FF121212</color>
+    <color name="hub_card_light">#FFFFFFFF</color>
+    <color name="hub_card_dark">#FF1E1E1E</color>
+    <color name="hub_text_primary_light">#FF212121</color>
+    <color name="hub_text_primary_dark">#FFFFFFFF</color>
+    <color name="hub_text_secondary_light">#FF757575</color>
+    <color name="hub_text_secondary_dark">#FFB0B0B0</color>
+
+    <!-- Cores do Placar -->
+    <color name="placar_time_a">#FFD60000</color>
+    <color name="placar_time_b">#FF6200EE</color>
+    <color name="placar_botao_iniciar">#FF388E3C</color>
+    <color name="placar_botao_periodo">#FF1565C0</color>
+    <color name="placar_botao_reiniciar">#FF424242</color>
+
+    <!-- Cores do Card Placar -->
+    <color name="card_placar_start">#FFFF6B35</color>
+    <color name="card_placar_end">#FFFF8F00</color>
+
+    <!-- Cores do Card Calculadora -->
+    <color name="card_calc_start">#FF536DFE</color>
+    <color name="card_calc_end">#FF7C4DFF</color>
+
+    <!-- Cores da Calculadora -->
+    <color name="calc_display_bg">#FF303030</color>
+    <color name="calc_display_text">#FFFFFFFF</color>
+    <color name="calc_btn_primary">#FF424242</color>
+    <color name="calc_btn_operator">#FF1565C0</color>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Espaçamentos gerais -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_xlarge">32dp</dimen>
+
+    <!-- Margens -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!-- Tamanhos de texto -->
+    <dimen name="text_title">28sp</dimen>
+    <dimen name="text_subtitle">16sp</dimen>
+    <dimen name="text_card_title">20sp</dimen>
+    <dimen name="text_card_description">14sp</dimen>
+    <dimen name="text_button">16sp</dimen>
+
+    <!-- Hub -->
+    <dimen name="hub_icon_size">48dp</dimen>
+    <dimen name="hub_card_radius">16dp</dimen>
+    <dimen name="hub_card_elevation">4dp</dimen>
+    <dimen name="hub_card_padding">20dp</dimen>
+
+    <!-- Placar -->
+    <dimen name="placar_score_size">54sp</dimen>
+    <dimen name="placar_cronometro_size">48sp</dimen>
+    <dimen name="placar_team_name_size">17sp</dimen>
+    <dimen name="placar_periodo_size">16sp</dimen>
+
+    <!-- Calculadora -->
+    <dimen name="calc_display_size">32sp</dimen>
+    <dimen name="calc_display_padding">16dp</dimen>
+</resources>

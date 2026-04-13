@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">App Hub</string>
+    <string name="titulo_hub">App Hub</string>
+    <string name="subtitulo_hub">Escolha uma funcionalidade</string>
+
+    <!-- Placar de Basquete -->
+    <string name="titulo_placar">Placar de Basquete</string>
+    <string name="descricao_placar">Contador de pontos para partidas de basquete com cronômetro e períodos</string>
+    <string name="btn_placar">Abrir Placar</string>
+
+    <!-- Calculadora Científica -->
+    <string name="titulo_calculadora">Calculadora Científica</string>
+    <string name="descricao_calculadora">Calculadora com operações básicas: soma, subtração, multiplicação e divisão</string>
+    <string name="btn_calculadora">Abrir Calculadora</string>
+
+    <!-- Placar - Cadastro -->
+    <string name="titulo_cadastro_placar">Contador de Pontos de Basquete</string>
+    <string name="label_time1">Time 1</string>
+    <string name="label_time2">Time 2</string>
+    <string name="hint_time1">Ex: Lakers</string>
+    <string name="hint_time2">Ex: Warriors</string>
+    <string name="btn_iniciar_partida">Iniciar Partida</string>
+    <string name="erro_preencher_times">Preencha o nome dos dois times!</string>
+
+    <!-- Placar - Jogo -->
+    <string name="periodo_formato">%s PERÍODO</string>
+    <string name="cronometro_formato">%02d:%02d</string>
+    <string name="btn_iniciar">▶ INICIAR</string>
+    <string name="btn_pausar">⏸ PAUSAR</string>
+    <string name="btn_continuar">▶ CONTINUAR</string>
+    <string name="btn_proximo_periodo">PRÓXIMO PERÍODO</string>
+    <string name="btn_tres_pontos">+3 PONTOS</string>
+    <string name="btn_dois_pontos">+2 PONTOS</string>
+    <string name="btn_tiro_livre">Tiro Livre</string>
+    <string name="btn_reiniciar_partida">Reiniciar Partida</string>
+    <string name="dialogo_titulo_reiniciar">Reiniciar Partida</string>
+    <string name="dialogo_msg_reiniciar">Tem certeza que deseja reiniciar o placar?</string>
+    <string name="dialogo_sim">Sim</string>
+    <string name="dialogo_nao">Não</string>
+    <string name="fim_periodo">Fim do %s!</string>
+    <string name="fim_jogo">Fim de jogo!</string>
+    <string name="ultimo_periodo">Já é o último período!</string>
+    <string name="placar_reiniciado">Placar reiniciado</string>
+
+    <!-- Calculadora -->
+    <string name="display_inicial">0</string>
+    <string name="divisao_por_zero">Divisão por zero</string>
+</resources>
