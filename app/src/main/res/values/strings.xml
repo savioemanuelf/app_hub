@@ -42,6 +42,11 @@
     <string name="ultimo_periodo">Já é o último período!</string>
     <string name="placar_reiniciado">Placar reiniciado</string>
 
+    <!-- Dado (Dice Roller) -->
+    <string name="titulo_dado">Dado</string>
+    <string name="descricao_dado">Role um dado de seis faces e veja o resultado</string>
+    <string name="btn_rolar">Rolar</string>
+
     <!-- Calculadora -->
     <string name="display_inicial">0</string>
     <string name="divisao_por_zero">Divisão por zero</string>

@@ -37,6 +37,13 @@
             android:label="@string/titulo_calculadora"
             android:parentActivityName=".MainActivity" />
 
+        <!-- Dado (Dice Roller) -->
+        <activity
+            android:name=".DadoActivity"
+            android:exported="false"
+            android:label="@string/titulo_dado"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>
