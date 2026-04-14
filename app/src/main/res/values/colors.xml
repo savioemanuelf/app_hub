@@ -32,6 +32,9 @@
     <color name="card_calc_start">#FF536DFE</color>
     <color name="card_calc_end">#FF7C4DFF</color>
 
+    <!-- Cores do Card Dado -->
+    <color name="card_dado_title">#FF2E7D32</color>
+
     <!-- Cores da Calculadora -->
     <color name="calc_display_bg">#FF303030</color>
     <color name="calc_display_text">#FFFFFFFF</color>

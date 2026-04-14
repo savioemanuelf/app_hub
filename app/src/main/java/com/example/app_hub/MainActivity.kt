@@ -40,5 +40,12 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CalculadoraActivity::class.java)
             startActivity(intent)
         }
+
+        // Card do Dado
+        val cardDado: MaterialCardView = findViewById(R.id.cardDado)
+        cardDado.setOnClickListener {
+            val intent = Intent(this, DadoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
