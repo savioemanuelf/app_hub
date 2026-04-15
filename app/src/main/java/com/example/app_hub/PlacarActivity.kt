@@ -44,6 +44,7 @@ class PlacarActivity : AppCompatActivity() {
     private lateinit var btnProximoPeriodo: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemePreference.applySavedTheme(this)
         super.onCreate(savedInstanceState)
 
         // Inicia na tela de cadastro dos times

@@ -24,6 +24,7 @@ class CalculadoraActivity : AppCompatActivity() {
     private var pendingOp: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemePreference.applySavedTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculadora)
 

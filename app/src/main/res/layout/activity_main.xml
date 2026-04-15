@@ -12,6 +12,19 @@
         android:padding="@dimen/padding_large"
         android:gravity="center_horizontal">
 
+        <ImageButton
+            android:id="@+id/btnThemeToggle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/dark_mode_switch_to_dark"
+            android:padding="8dp"
+            android:src="@drawable/ic_dark_mode"
+            app:tint="@color/hub_primary" />
+
         <!-- Título do App -->
         <TextView
             android:id="@+id/txtTituloHub"
@@ -21,7 +34,7 @@
             android:textSize="@dimen/text_title"
             android:textStyle="bold"
             android:textColor="@color/hub_primary"
-            android:layout_marginTop="48dp" />
+            android:layout_marginTop="24dp" />
 
         <TextView
             android:id="@+id/txtSubtituloHub"

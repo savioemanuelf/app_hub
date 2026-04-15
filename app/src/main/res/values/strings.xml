@@ -2,6 +2,8 @@
     <string name="app_name">App Hub</string>
     <string name="titulo_hub">App Hub</string>
     <string name="subtitulo_hub">Escolha uma funcionalidade</string>
+    <string name="dark_mode_switch_to_dark">Ativar modo escuro</string>
+    <string name="dark_mode_switch_to_light">Ativar modo claro</string>
 
     <!-- Placar de Basquete -->
     <string name="titulo_placar">Placar de Basquete</string>

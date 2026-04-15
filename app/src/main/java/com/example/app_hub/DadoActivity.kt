@@ -10,6 +10,7 @@ class DadoActivity : AppCompatActivity() {
     private var resultado = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        ThemePreference.applySavedTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dado)
 
