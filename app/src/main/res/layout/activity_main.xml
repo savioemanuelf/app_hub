@@ -248,5 +248,71 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- Card: Jogo da Velha -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardJogoDaVelha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            app:cardCornerRadius="@dimen/hub_card_radius"
+            app:cardElevation="@dimen/hub_card_elevation"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/hub_card_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/hub_icon_size"
+                        android:layout_height="@dimen/hub_icon_size"
+                        android:text="❌"
+                        android:textSize="32sp"
+                        android:gravity="center" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_medium">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_velha"
+                            android:textSize="@dimen/text_card_title"
+                            android:textStyle="bold"
+                            android:textColor="@color/card_velha_title" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/descricao_velha"
+                            android:textSize="@dimen/text_card_description"
+                            android:textColor="@color/hub_text_secondary_light"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="→"
+                        android:textSize="24sp"
+                        android:textColor="@color/hub_text_secondary_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
     </LinearLayout>
 </ScrollView>

@@ -33,4 +33,9 @@
     <!-- Calculadora -->
     <dimen name="calc_display_size">32sp</dimen>
     <dimen name="calc_display_padding">16dp</dimen>
+
+    <!-- Jogo da Velha -->
+    <dimen name="velha_cell_size">90dp</dimen>
+    <dimen name="velha_symbol_size">36sp</dimen>
+    <dimen name="velha_status_size">20sp</dimen>
 </resources>

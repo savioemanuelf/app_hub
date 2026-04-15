@@ -14,6 +14,8 @@ import com.google.android.material.card.MaterialCardView
  * para navegação às funcionalidades disponíveis:
  * - Placar de Basquete
  * - Calculadora Científica
+ * - Dado
+ * - Jogo da Velha
  */
 class MainActivity : AppCompatActivity() {
 
@@ -81,6 +83,13 @@ class MainActivity : AppCompatActivity() {
         val cardDado: MaterialCardView = findViewById(R.id.cardDado)
         cardDado.setOnClickListener {
             val intent = Intent(this, DadoActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Card do Jogo da Velha
+        val cardJogoDaVelha: MaterialCardView = findViewById(R.id.cardJogoDaVelha)
+        cardJogoDaVelha.setOnClickListener {
+            val intent = Intent(this, JogoDaVelhaActivity::class.java)
             startActivity(intent)
         }
     }

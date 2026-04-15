@@ -44,6 +44,13 @@
             android:label="@string/titulo_dado"
             android:parentActivityName=".MainActivity" />
 
+        <!-- Jogo da Velha -->
+        <activity
+            android:name=".JogoDaVelhaActivity"
+            android:exported="false"
+            android:label="@string/titulo_velha"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>

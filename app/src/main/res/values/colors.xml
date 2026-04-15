@@ -40,4 +40,11 @@
     <color name="calc_display_text">#FFFFFFFF</color>
     <color name="calc_btn_primary">#FF424242</color>
     <color name="calc_btn_operator">#FF1565C0</color>
+
+    <!-- Cores do Jogo da Velha -->
+    <color name="velha_player_x">#FF1565C0</color>
+    <color name="velha_player_o">#FFD60000</color>
+    <color name="velha_grid_line">#FFB0BEC5</color>
+    <color name="velha_win_highlight">#FF4CAF50</color>
+    <color name="card_velha_title">#FF7B1FA2</color>
 </resources>

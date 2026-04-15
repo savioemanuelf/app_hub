@@ -52,4 +52,13 @@
     <!-- Calculadora -->
     <string name="display_inicial">0</string>
     <string name="divisao_por_zero">Divisão por zero</string>
+
+    <!-- Jogo da Velha -->
+    <string name="titulo_velha">Jogo da Velha</string>
+    <string name="descricao_velha">Jogue contra um amigo no clássico jogo da velha</string>
+    <string name="velha_vez_jogador">Vez do jogador %s</string>
+    <string name="velha_vitoria">Jogador %s venceu! 🎉</string>
+    <string name="velha_empate">Empate! 🤝</string>
+    <string name="velha_reiniciar">Nova Partida</string>
+    <string name="velha_placar">X: %1$d  |  O: %2$d</string>
 </resources>
