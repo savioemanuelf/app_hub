@@ -18,7 +18,7 @@ import com.google.android.material.button.MaterialButton
  * - Placar acumulado entre partidas
  * - Animação ao marcar célula
  */
-class JogoDaVelhaActivity : AppCompatActivity() {
+class JogoDaVelhaActivity : BaseActivity() {
 
     private val tabuleiro = Array(3) { arrayOfNulls<String>(3) }
     private var jogadorAtual = "X"
@@ -34,6 +34,8 @@ class JogoDaVelhaActivity : AppCompatActivity() {
         ThemePreference.applySavedTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jogo_da_velha)
+
+        applyWindowInsets(findViewById(R.id.jogoDaVelhaScrollView))
 
         txtStatus = findViewById(R.id.txtStatus)
         txtPlacar = findViewById(R.id.txtPlacar)
