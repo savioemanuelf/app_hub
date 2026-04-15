@@ -1,62 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="@dimen/padding_xlarge">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/titulo_cadastro_placar"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_title"
-        android:textStyle="bold"
-        android:layout_marginBottom="48dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_time1"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/placar_time_a"/>
-
-    <EditText
-        android:id="@+id/editNomeTimeA"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_time1"
-        android:inputType="text"
-        android:layout_marginBottom="@dimen/padding_large"
-        android:layout_marginTop="@dimen/padding_small"/>
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/padding_xlarge">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_time2"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/placar_time_b"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_cadastro_placar"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_title"
+            android:textStyle="bold"
+            android:layout_marginBottom="48dp"/>
 
-    <EditText
-        android:id="@+id/editNomeTimeB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/hint_time2"
-        android:inputType="text"
-        android:layout_marginBottom="48dp"
-        android:layout_marginTop="@dimen/padding_small"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_time1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/placar_time_a"/>
 
-    <Button
-        android:id="@+id/btnIniciar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_iniciar_partida"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/placar_botao_iniciar"
-        android:textSize="@dimen/text_button"
-        android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editNomeTimeA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_time1"
+            android:inputType="text"
+            android:layout_marginBottom="@dimen/padding_large"
+            android:layout_marginTop="@dimen/padding_small"/>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_time2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/placar_time_b"/>
+
+        <EditText
+            android:id="@+id/editNomeTimeB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_time2"
+            android:inputType="text"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="@dimen/padding_small"/>
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_iniciar_partida"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/placar_botao_iniciar"
+            android:textSize="@dimen/text_button"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
