@@ -4,7 +4,8 @@
         <item name="colorPrimary">@color/hub_primary</item>
         <item name="colorPrimaryDark">@color/hub_primary_dark</item>
         <item name="colorAccent">@color/hub_accent</item>
-        <item name="android:statusBarColor">@color/hub_primary_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowBackground">@color/hub_background_light</item>
     </style>
 
@@ -16,13 +17,15 @@
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/calc_btn_operator</item>
         <item name="colorOnSecondary">@color/white</item>
-        <item name="android:statusBarColor">@color/calc_display_bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 
     <!-- Tema para a PlacarActivity -->
     <style name="Theme.AppHub.Placar" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/placar_botao_iniciar</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="android:statusBarColor">@color/hub_primary_dark</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 </resources>
