@@ -21,7 +21,7 @@ import androidx.appcompat.app.AppCompatActivity
  * - Pontuação: 3 pontos, 2 pontos e tiro livre
  * - Reiniciar partida
  */
-class PlacarActivity : AppCompatActivity() {
+class PlacarActivity : BaseActivity() {
 
     private var pontuacaoTimeA: Int = 0
     private var pontuacaoTimeB: Int = 0
@@ -68,6 +68,7 @@ class PlacarActivity : AppCompatActivity() {
             }
 
             iniciarPlacar(nomeTimeA, nomeTimeB)
+            applyWindowInsets(findViewById(R.id.placarJogoScrollView))
         }
     }
 

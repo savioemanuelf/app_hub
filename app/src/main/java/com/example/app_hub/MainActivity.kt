@@ -15,13 +15,14 @@ import com.google.android.material.card.MaterialCardView
  * - Placar de Basquete
  * - Calculadora Científica
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         ThemePreference.applySavedTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        applyWindowInsets(findViewById(R.id.mainScrollView))
         setupThemeToggleButton()
         setupNavigation()
     }

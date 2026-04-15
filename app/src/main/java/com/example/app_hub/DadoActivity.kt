@@ -5,7 +5,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 
-class DadoActivity : AppCompatActivity() {
+class DadoActivity : BaseActivity() {
 
     private var resultado = 1
 
@@ -13,6 +13,8 @@ class DadoActivity : AppCompatActivity() {
         ThemePreference.applySavedTheme(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dado)
+
+        applyWindowInsets(findViewById(R.id.dadoContainer))
 
         val imgDado: ImageView = findViewById(R.id.imgDado)
         val btnRolar: MaterialButton = findViewById(R.id.btnRolar)

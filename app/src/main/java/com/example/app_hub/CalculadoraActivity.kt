@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
  * - Tratamento de divisão por zero
  * - Preservação de estado em rotação de tela
  */
-class CalculadoraActivity : AppCompatActivity() {
+class CalculadoraActivity : BaseActivity() {
 
     private lateinit var tvDisplay: TextView
 
@@ -30,6 +30,8 @@ class CalculadoraActivity : AppCompatActivity() {
 
         // TextView de display
         tvDisplay = findViewById(R.id.txtResultado)
+
+        applyWindowInsets(findViewById(R.id.calcConstraintLayout))
 
         // Botões de dígitos
         val digits = listOf(
